@@ -1,0 +1,89 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 1rem;
+}
+.header{
+   color: #6558f5;
+}
+
+.buttons{
+   
+    display: flex;
+    gap: 3rem;
+    
+}
+
+.btnWithText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.btnWithText > p{
+    font-weight: 600;
+    color: #6558f5;
+}
+
+.boxContainer{
+    margin-top: 2rem;
+}
+
+.boxContainer > div{
+    display: grid;
+    grid-template-areas: 
+    "one two three"
+     "four five six"
+     "seven eight nine";
+}
+
+.boxContainer  .boxes{
+    height: 60px;
+    width: 60px;
+    border: 1px solid #6558f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxes:nth-child(1){
+    grid-area: "one";
+}
+.boxes:nth-child(2){
+    grid-area: "two";
+}
+.boxes:nth-child(3){
+    grid-area: "three";
+}
+.boxes:nth-child(4){
+    grid-area: "four";
+}
+.boxes:nth-child(5){
+    grid-area: "five";
+}
+.boxes:nth-child(6){
+    grid-area: "six";
+}
+.boxes:nth-child(7){
+    grid-area: "seven";
+}
+.boxes:nth-child(8){
+    grid-area: "eight";
+}
+.boxes:nth-child(9){
+    grid-area: "nine";
+}
+
+.winner{
+    color: #6558f5;
+    font-size: 3rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
